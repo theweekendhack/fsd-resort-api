@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 75
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "rules": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "bestseller": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "number"
+    }
+
+  },
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "description",
+    "type",
+    "location",
+    "photo_url",
+    "price",
+    "bestseller"
+  ]
+}
